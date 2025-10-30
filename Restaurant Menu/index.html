@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu Screen -->
+  <div class="app">
+    <header>
+      <h2>Menu</h2>
+      <input type="text" placeholder="Search...">
+      <button class="cart-btn">🛒</button>
+    </header>
+
+    <!-- Categories -->
+    <nav class="categories">
+      <button class="active">All</button>
+      <button>Breakfast</button>
+      <button>Lunch</button>
+      <button>Treats</button>
+      <button>Dessert</button>
+    </nav>
+
+    <!-- Menu Items -->
+    <div class="menu-grid">
+      <div class="card" onclick="showDetails('Pear & Orange', 25)">
+        <img src="https://images.unsplash.com/photo-1515251256758-720a46104dcd?" alt="">
+        <div class="info">
+          <h4>Pear & Orange</h4>
+          <p>$25.00</p>
+          <span>20 min ⏱ | ⭐ 4.8</span>
+        </div>
+      </div>
+
+       <div class="card" onclick="showDetails('Pear & Orange', 25)">
+        <img src="https://plus.unsplash.com/premium_photo-1726862501090-31c6ce8dcfca?q" alt="">
+        <div class="info">
+          <h4>Pear & Orange</h4>
+          <p>$25.00</p>
+          <span>20 min ⏱ | ⭐ 4.8</span>
+        </div>
+      </div>
+
+
+       <div class="card" onclick="showDetails('Pear & Orange', 25)">
+        <img src="https://plus.unsplash.com/premium_photo-1726862501090-31c6ce8dcfca?q?" alt="">
+        <div class="info">
+          <h4>Pear & Orange</h4>
+          <p>$25.00</p>
+          <span>20 min ⏱ | ⭐ 4.8</span>
+        </div>
+      </div>
+
+
+       <div class="card" onclick="showDetails('Pear & Orange', 25)">
+        <img src="https://images.unsplash.com/photo-1579065413090-3ce766e7deca?" alt="">
+        <div class="info">
+          <h4>Pear & Orange</h4>
+          <p>$25.00</p>
+          <span>20 min ⏱ | ⭐ 4.8</span>
+        </div>
+      </div>
+       <div class="card" onclick="showDetails('Pear & Orange', 25)">
+        <img src="https://images.unsplash.com/photo-1515251256758-720a46104dcd?" alt="">
+        <div class="info">
+          <h4>Pear & Orange</h4>
+          <p>$25.00</p>
+          <span>20 min ⏱ | ⭐ 4.8</span>
+        </div>
+      </div>
+
+      <div class="card" onclick="showDetails('Meat & Mushrooms', 37)">
+        <img src="https://images.unsplash.com/photo-1579065413090-3ce766e7deca?" alt="">
+        <div class="info">
+          <h4>Meat & Mushrooms</h4>
+          <p>$37.00</p>
+          <span>30 min ⏱ | ⭐ 5.0</span>
+        </div>
+      </div>
+
+      <div class="card" onclick="showDetails('Egg & Bread', 25)">
+        <img src="https://images.unsplash.com/photo-1619096118293-a34a2f9b7339?" alt="">
+        <div class="info">
+          <h4>Egg & Bread</h4>
+          <p>$25.00</p>
+          <span>10 min ⏱ | ⭐ 4.7</span>
+        </div>
+      </div>
+
+      <div class="card" onclick="showDetails('Sweet Pancake', 13)">
+        <img src="https://plus.unsplash.com/premium_photo-1726862501090-31c6ce8dcfca?q" alt="">
+        <div class="info">
+          <h4>Sweet Pancake</h4>
+          <p>$13.00</p>
+          <span>15 min ⏱ | ⭐ 4.9</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dish Details Screen -->
+  <div class="details" id="details">
+    <button class="close" onclick="closeDetails()">← Back</button>
+    <img id="dishImg" src="https://images.unsplash.com/photo-1515251256758-720a46104dcd?" alt="">
+    <h2 id="dishTitle">Dish Name</h2>
+    <p id="dishPrice">$00.00</p>
+    <p class="desc">
+      As a rule, pancakes are served for breakfast with sweet sauces, chocolate, berries, and syrup. 
+      Pancakes are popular in the USA and Canada, but now enjoyed all over the world.
+    </p>
+
+    <h3>Recently Viewed</h3>
+    <div class="recent">
+      <img src="https://images.unsplash.com/photo-1515251256758-720a46104dcd?" alt="">
+      <img src="https://images.unsplash.com/photo-1619096118293-a34a2f9b7339?" alt="">
+      <img src="https://images.unsplash.com/photo-1579065413090-3ce766e7deca?" alt="">
+         <img src="https://plus.unsplash.com/premium_photo-1726862501090-31c6ce8dcfca?q" alt="">
+    </div>
+    <button class="add-cart">Add to Cart</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
