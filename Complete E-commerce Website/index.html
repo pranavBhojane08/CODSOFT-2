@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B-Shop | E-Commerce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <header>
+    <div class="logo">B-Shop</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search"></i>
+      <i class="far fa-heart"></i>
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+  </header>
+
+  <!-- Search and Filter -->
+  <div class="search-filter">
+    <input type="text" id="searchInput" placeholder="Search for products...">
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="dress">Dresses</option>
+      <option value="jacket">Jackets</option>
+      <option value="bag">Bags</option>
+      <option value="shoes">Shoes</option>
+    </select>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Admire Stylish Dresses & Looks</h1>
+      <p>Discover the latest fashion trends with our exclusive collections designed to make you shine every day.</p>
+      <button>Show More</button>
+    </div>
+    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600" alt="Fashion model">
+  </section>
+
+  <!-- Products -->
+  <section class="product-section">
+    <h2 style="margin-bottom:20px;">You may like</h2>
+    <div class="product-grid" id="productGrid">
+      <div class="product" data-category="dress">
+        <img src="https://images.unsplash.com/photo-1627333323351-00adbbc7690d?w" alt="">
+        <h4>Black Dress Gucci</h4>
+        <p>$715</p>
+        <button>Shop Now</button>
+      </div>
+
+      <div class="product" data-category="dress">
+        <img src="https://images.unsplash.com/photo-1606480192262-e3b6a9f37142?q" alt="">
+        <h4>Red Dress Valentino</h4>
+        <p>$1610</p>
+        <button>Shop Now</button>
+      </div>
+
+      <div class="product" data-category="jacket">
+        <img src="https://images.unsplash.com/photo-1534126511673-b6899657816a?w=500" alt="">
+        <h4>Shiny Jacket Givenchy</h4>
+        <p>$540</p>
+        <button>Shop Now</button>
+      </div>
+
+      <div class="product" data-category="bag">
+        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?w=500" alt="">
+        <h4>Luxury Handbag</h4>
+        <p>$450</p>
+        <button>Shop Now</button>
+      </div>
+
+      <div class="product" data-category="shoes">
+        <img src="https://plus.unsplash.com/premium_photo-1673977134574-95689f812241?w" alt="">
+        <h4>Stylish Heels</h4>
+        <p>$280</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 B-Shop. All Rights Reserved.</p>
+  </footer>
+
+<script src="Script.js"></script>
+
+</body>
+</html>
