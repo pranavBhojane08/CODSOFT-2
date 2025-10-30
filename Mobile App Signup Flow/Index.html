@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Flow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcome" class="container active">
+    <h2>Welcome</h2>
+    <p>Please login or sign up to continue using our app.</p>
+    <img id="img" src="2341.png_860.png" alt="" style="height: 200px ; width: 200px;">
+    <div class="social-btns">
+      <button><img id="logo" src="images.png" alt=""></button>
+      <button><img id="logo" src="pngtree-twitter-logo-icon-png-image_3570310.png" alt=""></button>
+    </div>
+    <p>or login with facebook or tweeter</p>
+    <button onclick="showPage('signup')">Sign Up</button>
+    <p class="small">Already have an account? <a href="#" onclick="showPage('login')">Login</a></p>
+  </div>
+
+  <!-- Sign Up Screen -->
+  <div id="signup" class="container">
+    <h2>Sign Up</h2>
+    <p>Create an account to continue or 
+      
+    </p>
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signupPassword" placeholder="Password">
+    <div style="">
+      <input type="checkbox" id="policy"> I agree with privacy policy
+    </div>
+    <button onclick="signUp()">Sign Up</button>
+    <p class="small">Already have an account? <a href="#" onclick="showPage('login')">Login</a></p>
+  </div>
+
+  <!-- Login Screen -->
+  <div id="login" class="container">
+    <h2>Login Now</h2>
+    <p>Login to continue using our app</p>
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p class="small"><a href="#">Forgot Password?</a></p>
+    <p class="small">Don’t have an account? <a href="#" onclick="showPage('signup')">Sign Up</a></p>
+  </div>
+
+ 
+<script src="Scripts.js"></script>
+</body>
+</html>

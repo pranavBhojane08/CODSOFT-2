@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f2eef6, #cfd5e0);
+}
+
+/* Container Styling */
+.container {
+  width: 350px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.container.active {
+  display: block;
+}
+
+/* Headings */
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Logo & Image */
+#img {
+  width: 160px;
+  height: auto;
+  margin: 15px auto;
+  display: block;
+}
+
+#logo {
+  width: 33px;
+  height: 33px;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border: 1px solid #2575fc;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.4);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+/* Primary Button */
+.container button {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Social Buttons */
+.social-btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.social-btns button {
+  width: 45px;
+  height: 45px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Small text */
+.small {
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.small a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 25px 20px;
+  }
+  #img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: linear-gradient(120deg, #d0c9d7, #2575fc);
+  }
+  .container {
+    width: 400px;
+  }
+}
